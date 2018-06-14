@@ -1,0 +1,4 @@
+config
+docker-files
+scripts
+/node_modules
