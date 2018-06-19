@@ -1,0 +1,27 @@
+---
+name: MyComponent
+---
+
+import { Playground } from 'docz'
+import { App } from './App'
+
+# Some title
+
+<Playground>
+  <App />
+</Playground>
+
+<Playground>
+  {() => (
+    <App />
+  )}
+</Playground>
+
+<Playground>
+  {() => {
+    const someVar = 'value'
+    return <App example={someVar} />
+  }}
+</Playground>
+
+<PropsTable of={App} />
